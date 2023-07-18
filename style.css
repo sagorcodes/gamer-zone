@@ -36,10 +36,12 @@
   font-size: 18px;
 }
 .social-btn {
+  color: #3c354f;
+  font-size: 18px;
   padding: 15px 20px;
   border: none;
   border-radius: 8px;
-  background: rgba(11, 2, 35, 0.10);
+  background: rgba(11, 2, 35, 0.1);
 }
 .fa-youtube {
   color: #f61c0d;
@@ -48,4 +50,36 @@
   background: linear-gradient(to right, #000000, #f00044, #08fff9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+/* responsive css for mobile  */
+@media screen and (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 10px 100px;
+  }
+  .logo {
+    gap: 10px;
+  }
+  .nav {
+    margin: 60px 0;
+    text-align: center;
+  }
+  .nav a {
+    margin: 0 20px;
+  }
+  .social-btn {
+    margin-top: 60px;
+  }
+}
+/* responsive css for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .header-container {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 10px 100px;
+  }
+  .nav {
+    margin: 40px 0;
+  }
 }
