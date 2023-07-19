@@ -199,7 +199,7 @@
 .card-pic:hover .overlay {
   opacity: 1;
 }
-.fa-circle-play {
+.watch-now-icon {
   font-size: 40px;
   color: white;
 }
@@ -294,6 +294,28 @@
     display: flex;
     justify-content: center;
   }
+  /* Video Games Section for mobile */
+  .section-title {
+    font-size: 30px;
+  }
+  .text-color {
+    font-size: 30px;
+  }
+  .section-description {
+    padding: 0 20px;
+  }
+  .games-card-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .card-pic {
+    width: 250px;
+    height: 350px;
+    margin: 0;
+  }
 }
 /* responsive css for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -349,5 +371,8 @@
   }
   .quote {
     text-align: center;
+  }
+  .games-card-container {
+    padding: 10px 20px 10px 35px;
   }
 }
